@@ -1,0 +1,13 @@
+diff --git a/build/core/main.mk b/build/core/main.mk
+index 6560375..d427263 100644
+--- a/build/core/main.mk
++++ b/build/core/main.mk
+@@ -474,7 +474,7 @@ ifneq ($(dont_bother),true)
+ subdir_makefiles := \
+ 	$(shell build/tools/findleaves.py $(FIND_LEAVES_EXCLUDES) $(subdirs) Android.mk)
+ 
+-$(foreach mk, $(subdir_makefiles), $(eval include $(mk)))
++$(foreach mk, $(subdir_makefiles), $(info including $(mk) ...)$(eval include $(mk)))
+ 
+ endif # dont_bother
+ 
