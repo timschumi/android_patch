@@ -1,0 +1,12 @@
+diff --git a/system/core/init/init.cpp b/system/core/init/init.cpp
+index 8ea42ca..9e2eb0d 100644
+--- a/system/core/init/init.cpp
++++ b/system/core/init/init.cpp
+@@ -929,6 +929,7 @@ static bool selinux_is_disabled(void)
+ 
+ static bool selinux_is_enforcing(void)
+ {
++    return false;
+     if (ALLOW_DISABLE_SELINUX) {
+         return selinux_status_from_cmdline() == SELINUX_ENFORCING;
+     }
