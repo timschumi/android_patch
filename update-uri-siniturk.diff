@@ -1,0 +1,11 @@
+diff --git a/packages/apps/CMUpdater/res/values/config.xml b/packages/apps/CMUpdater/res/values/config.xml
+index 6f1e9cb..07e3a9b 100644
+--- a/packages/apps/CMUpdater/res/values/config.xml
++++ b/packages/apps/CMUpdater/res/values/config.xml
+@@ -9,5 +9,5 @@
+ -->
+ <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+     <!-- Updater Config Strings -->
+-    <string name="conf_update_server_url_def" translatable="false">https://download.lineageos.org/api</string>
++    <string name="conf_update_server_url_def" translatable="false">http://siniturk.16mb.com/cmota/api</string>
+ </resources>
